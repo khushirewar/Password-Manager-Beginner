@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Personal Password Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+
+  <body>
+    <nav>
+      <ul>
+        <li id="item">Home</li>
+        <li id="item">About</li>
+        <li id="item">Contact</li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h1>Password Manager</h1>
+
+      <p>
+        <em>Great to see you ! Are you also habitual of forgetting passwords? No
+        worries, we've got you covered. Get ready to access your secure vault?
+        Save, Copy and Use !!</em>
+      </p>
+
+      <h2>Saved Passwords</h2>
+
+      
+      <table id="tble">
+        <tr>
+          <th>WebSite</th>
+          <th>Username</th>
+          <th>Password</th>
+          <th>Delete</th>
+        </tr>
+      <p class="alert" id="copied"> Successfully copied !! </p>
+        
+        
+      </table>
+
+      <h2> + Add New Password </h2>
+
+      <form id="passwordForm" action="/submit" metdod="post">
+
+        <label for="website">Website : </label>
+        <input type="text" id="website" name="website" required />
+        <br />
+
+        <label for="username">Username : </label>
+        <input type="text" id="username" name="username" required />
+        <br />
+
+        <label for="password">Password : </label>
+        <input type="password" id="password" name="password" required />
+        <br />
+
+        <button  class="btn" type="submit"> <em>Submit</em> </button>
+      </form>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
